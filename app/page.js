@@ -108,11 +108,13 @@ function Section_Home(){
     <Fragment>
       <Box sx={{textAlign: "center", py: 10}}>
           <Typography variant="h1" sx={{fontWeight: "bold"}}>
-            Hello, I'm Tan Jia Suan
+            Hello, I'm Louis Tan Jia Suan
           </Typography>
-
+          <Typography variant="subtitle1" sx={{fontStyle: "italic"}}>
+            My hand is strong, my friends call me Louis Armstrong..
+          </Typography>
           <Typography variant="h4" sx={{fontWeight: "bold"}}>
-            A frontend developer based in Kuala Lumpur, Malaysia.
+            Frontend developer based in Kuala Lumpur, Malaysia.
           </Typography>
       </Box>
       
@@ -174,7 +176,7 @@ function Section_Projects(){
       logo: "/assets/ocbc.png"
     },
     {
-      id: "3",
+      id: "4",
       name: "NCR Malaysia",
       title: "Automate Build Package Tool",
       description: "Develop automated build tool for release version packages into different phase and versions.",
@@ -182,7 +184,15 @@ function Section_Projects(){
       logo: "/assets/ncr.png"
     },
     {
-      id: "3",
+      id: "5",
+      name: "NCR Malaysia",
+      title: "Report Generation Tool",
+      description: "Develop report generation tool to generate different kind of reports in preset formats.",
+      date: "2019",
+      logo: "/assets/ncr.png"
+    },
+    {
+      id: "6",
       name: "CUBC",
       title: "Cathay United Bank Cambodia",
       description: "Develop new transactions and fixes on ATM software. Provide customer support and package delivery.",
@@ -190,7 +200,7 @@ function Section_Projects(){
       logo: "/assets/cubc.svg"
     },
     {
-      id: "3",
+      id: "7",
       name: "InterX",
       title: "Banking Terminal Advertisement Solution",
       description: "Developed end to end personalized advertisement software for bank terminal, admin dashboard to CRUD advertisement content, rules, and deployment.",
@@ -198,7 +208,7 @@ function Section_Projects(){
       logo: "/assets/interx.png"
     },
     {
-      id: "3",
+      id: "8",
       name: "SDMS",
       title: "Sofware Distribution Management System",
       description: "Developed admin dashboard for bank user to retrieve terminal logs, distribute software to selected terminals and more.",
@@ -206,7 +216,7 @@ function Section_Projects(){
       logo: "/assets/sdms.png"
     },
     {
-      id: "3",
+      id: "9",
       name: "myESG",
       title: "ESG Disclosure platform for SME",
       description: "Developed ESG platform empowers organizations to enhance and disclose their environmental, social, and governance practices and performance.",
@@ -235,7 +245,7 @@ function Section_Projects(){
             return(
               <Fragment key={`project-${item.name}-${index}`}>
                 <Grid item xs={12} sm={6} md={6} lg={4}>
-                  <Card sx={{display: "flex", flexDirection: "column", justifyContent: "space-between", borderRadius: "10px", boxShadow: "3px 1px 11px 0px rgba(171,165,165,0.75)", p: 4, alignItems: "center", textAlign: "center" , height: "400px"}}>
+                  <Card sx={{display: "flex", flexDirection: "column", justifyContent: "space-between", borderRadius: "10px", boxShadow: "3px 1px 11px 0px rgba(171,165,165,0.75)", p: 4, alignItems: "center", textAlign: "center" , minHeight: "400px"}}>
                     <Box sx={{position: "relative", height: "100%", width: "100%", minHeight: "100px"}}>
                         <Image
                           src={item.logo}
