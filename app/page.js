@@ -259,7 +259,7 @@ function Section_Projects(){
             return(
               <Fragment key={`project-${item.name}-${index}`}>
                 <Grid item xs={12} sm={6} md={6} lg={4}>
-                  <Card sx={{  opacity: isVisible ? 1: 0, transition: 'opacity 0.5s ease-in-out',   display: "flex", flexDirection: "column", justifyContent: "space-between", borderRadius: "10px", boxShadow: "3px 1px 11px 0px rgba(171,165,165,0.75)", p: 4, alignItems: "center", textAlign: "center" , height: "100%"}}>
+                  <Card sx={{  opacity: isVisible ? 1: 0, transition: 'opacity 0.5s ease-in-out',   display: "flex", flexDirection: "column",  borderRadius: "10px", boxShadow: "3px 1px 11px 0px rgba(171,165,165,0.75)", p: 4, alignItems: "center", textAlign: "center" , height: "100%"}}>
                     <Box sx={{position: "relative", height: "100%", width: "100%", height: "100px"}}>
                         <Image
                           src={item.logo}
