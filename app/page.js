@@ -1,5 +1,5 @@
 'use client';
-import { Fragment, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 
 import Image from "next/image";
 import styles from "./page.module.css";
@@ -71,6 +71,7 @@ function App(){
 function Portfolio() {
 
   const { t } = useTranslation('')
+
 
   return (
     <main>
@@ -144,6 +145,19 @@ function Section_Home(){
 
 function Section_Projects(){
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+      const handleScroll = () => {
+          const currentScrollPos = window.pageYOffset;
+          const isVisible = currentScrollPos > 100; // Change 100 to whatever offset you prefer
+          setIsVisible(isVisible);
+      };
+
+      window.addEventListener('scroll', handleScroll, { passive: true });
+
+      return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleClick = () => {
     
@@ -229,7 +243,7 @@ function Section_Projects(){
   return(
     <Fragment >
       <Box sx={{background: "#FFEDE1"}}>
-        <Box sx={{textAlign: "center", p: 32}}>
+        <Box sx={{textAlign: "center", p: "10% 20%"}}>
           <Typography variant="h4" sx={{fontWeight: "bold"}}>
             My Exciting Projects
           </Typography>
@@ -239,14 +253,14 @@ function Section_Projects(){
         </Box>
       </Box>
         
-      <Grid container sx={{alignItems: "center", justifyContent: "center", px: 12, pb: 4, mt: -24}} spacing={8}>
+      <Grid container sx={{alignItems: "stretch", justifyContent: "center", px: "10%", pb: 4, mt: "-10%"}} spacing={8}>
         {
           projectsArr.map((item, index)=>{
             return(
               <Fragment key={`project-${item.name}-${index}`}>
                 <Grid item xs={12} sm={6} md={6} lg={4}>
-                  <Card sx={{display: "flex", flexDirection: "column", justifyContent: "space-between", borderRadius: "10px", boxShadow: "3px 1px 11px 0px rgba(171,165,165,0.75)", p: 4, alignItems: "center", textAlign: "center" , minHeight: "400px"}}>
-                    <Box sx={{position: "relative", height: "100%", width: "100%", minHeight: "100px"}}>
+                  <Card sx={{  opacity: isVisible ? 1: 0, transition: 'opacity 0.5s ease-in-out',   display: "flex", flexDirection: "column", justifyContent: "space-between", borderRadius: "10px", boxShadow: "3px 1px 11px 0px rgba(171,165,165,0.75)", p: 4, alignItems: "center", textAlign: "center" , height: "100%"}}>
+                    <Box sx={{position: "relative", height: "100%", width: "100%", height: "100px"}}>
                         <Image
                           src={item.logo}
                           fill
@@ -263,9 +277,9 @@ function Section_Projects(){
                       </Typography>
                     </Box>
                     
-                    <CardActions>
+                    {/* <CardActions>
                       <Button onClick={()=>{handleClick(item)}}>See More</Button>
-                    </CardActions>
+                    </CardActions> */}
                   </Card>
                 </Grid>
               </Fragment>
