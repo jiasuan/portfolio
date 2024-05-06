@@ -112,7 +112,7 @@ function Section_Home(){
             Hello, I'm Louis Tan Jia Suan
           </Typography>
           <Typography variant="subtitle1" sx={{fontStyle: "italic"}}>
-            My hand is strong, my friends call me Louis Armstrong..
+            My arm is strong, my friends call me Louis Armstrong..
           </Typography>
           <Typography variant="h4" sx={{fontWeight: "bold"}}>
             Frontend developer based in Kuala Lumpur, Malaysia.
@@ -169,7 +169,7 @@ function Section_Projects(){
       id: "1",
       name: "CUB",
       title: "Cathay United Bank Taiwan",
-      description: "Develop ATM Terminal Software, Provide customer support and package delivery in all phases.",
+      description: "Developed ATM Terminal Software, provided customer support, and handled package delivery in all phases.",
       date: "2019",
       logo: "/assets/cub.png"
     },
@@ -177,7 +177,7 @@ function Section_Projects(){
       id: "2",
       name: "Genting",
       title: "Software Testing",
-      description: "Testing on Software, Terminal Agent, Microservices, Server Request and Terminal machine integration testing and package release.",
+      description: "Performed testing on software, Terminal Agent, Microservices, Server Request, and Terminal machine integration, and released packages.",
       date: "2019",
       logo: "/assets/genting.png"
     },
@@ -185,15 +185,15 @@ function Section_Projects(){
       id: "3",
       name: "OCBC Singapore",
       title: "OCBC Singapore",
-      description: "Develop new transaction (Money Lock) on existing ATM software.",
+      description: "Developed new transaction (Money Lock) on existing ATM software.",
       date: "2019",
       logo: "/assets/ocbc.png"
     },
     {
       id: "4",
       name: "NCR Malaysia",
-      title: "Automate Build Package Tool",
-      description: "Develop automated build tool for release version packages into different phase and versions.",
+      title: "Automated Build Package Tool",
+      description: "Developed an automated build tool for releasing version packages into different phases and versions.",
       date: "2019",
       logo: "/assets/ncr.png"
     },
@@ -201,7 +201,7 @@ function Section_Projects(){
       id: "5",
       name: "NCR Malaysia",
       title: "Report Generation Tool",
-      description: "Develop report generation tool to generate different kind of reports in preset formats.",
+      description: "Developed a report generation tool to generate different kinds of reports in preset formats.",
       date: "2019",
       logo: "/assets/ncr.png"
     },
@@ -209,7 +209,7 @@ function Section_Projects(){
       id: "6",
       name: "CUBC",
       title: "Cathay United Bank Cambodia",
-      description: "Develop new transactions and fixes on ATM software. Provide customer support and package delivery.",
+      description: "Developed new transactions and fixes on ATM software, provided customer support, and handled package delivery.",
       date: "2019",
       logo: "/assets/cubc.svg"
     },
@@ -217,27 +217,28 @@ function Section_Projects(){
       id: "7",
       name: "InterX",
       title: "Banking Terminal Advertisement Solution",
-      description: "Developed end to end personalized advertisement software for bank terminal, admin dashboard to CRUD advertisement content, rules, and deployment.",
+      description: "Developed end-to-end personalized advertisement software for bank terminals, an admin dashboard to CRUD (Create, Read, Update, Delete) advertisement content, rules, and deployment.",
       date: "2019",
       logo: "/assets/interx.png"
     },
     {
       id: "8",
       name: "SDMS",
-      title: "Sofware Distribution Management System",
-      description: "Developed admin dashboard for bank user to retrieve terminal logs, distribute software to selected terminals and more.",
+      title: "Software Distribution Management System",
+      description: "Developed an admin dashboard for bank users to retrieve terminal logs, distribute software to selected terminals, and more.",
       date: "2019",
       logo: "/assets/sdms.png"
     },
     {
       id: "9",
       name: "myESG",
-      title: "ESG Disclosure platform for SME",
-      description: "Developed ESG platform empowers organizations to enhance and disclose their environmental, social, and governance practices and performance.",
+      title: "ESG Disclosure Platform for SMEs",
+      description: "Developed an ESG platform that empowers organizations to enhance and disclose their environmental, social, and governance practices and performance.",
       date: "2019",
       logo: "/assets/myesg.png"
     }
   ];
+  
 
 
   return(
@@ -272,7 +273,7 @@ function Section_Projects(){
                     <Typography variant='h5' fontWeight={"bold"}>
                         {item.title}
                       </Typography>
-                      <Typography variant='h6'>
+                      <Typography variant='h6' fontWeight={"400"}>
                         {item.description}
                       </Typography>
                     </Box>
