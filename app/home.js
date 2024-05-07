@@ -72,9 +72,9 @@ const translationsData = {
     'ch': {
         "intro.title": "你好，我是陈嘉轩",
         "intro.joke": "",
-        "intro.subTitle" : "是位在马来西亚吉隆坡的前端工程师。",
+        "intro.subTitle" : "位与马来西亚吉隆坡的前端工程师。",
         "project.title": "我做过的项目",
-        "project.subTitle": "在过去的几年里，，我有机会与出色的人一起参与银行终端软件行业的各种项目！",
+        "project.subTitle": "在过去的几年里，我参与了各种银行终端软件行业的项目。",
         "project.title.cub": "ATM终端软件",
         "project.description.cub": "开发了ATM终端软件，并在所有阶段（SIT, UAT, PROD）处提供客户支持。",
         "project.title.genting": "软件测试",
