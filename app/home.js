@@ -213,14 +213,7 @@ function Section_Projects(props){
   }
 
   const projectsArr = [
-    {
-      id: "1",
-      name: "CUB",
-      title: translationsData[lang]["project.title.cub"],
-      description: translationsData[lang]["project.description.cub"],
-      date: "2019",
-      logo: "/assets/cub.png"
-    },
+
     {
       id: "2",
       name: "Genting",
@@ -236,30 +229,6 @@ function Section_Projects(props){
       description: translationsData[lang]["project.description.ocbc"],
       date: "2019",
       logo: "/assets/ocbc.png"
-    },
-    {
-      id: "4",
-      name: "NCR Malaysia",
-      title: translationsData[lang]["project.title.buildTool"],
-      description: translationsData[lang]["project.description.buildTool"],
-      date: "2019",
-      logo: "/assets/ncr.png"
-    },
-    {
-      id: "5",
-      name: "NCR Malaysia",
-      title: translationsData[lang]["project.title.reportTool"],
-      description: translationsData[lang]["project.description.reportTool"],
-      date: "2019",
-      logo: "/assets/ncr.png"
-    },
-    {
-      id: "6",
-      name: "CUBC",
-      title: translationsData[lang]["project.title.cubc"],
-      description: translationsData[lang]["project.description.cubc"],
-      date: "2019",
-      logo: "/assets/cubc.svg"
     },
     {
       id: "7",
@@ -284,7 +253,39 @@ function Section_Projects(props){
       description: translationsData[lang]["project.description.myesg"],
       date: "2019",
       logo: "/assets/myesg.png"
-    }
+    },
+    {
+        id: "1",
+        name: "CUB",
+        title: translationsData[lang]["project.title.cub"],
+        description: translationsData[lang]["project.description.cub"],
+        date: "2019",
+        logo: "/assets/cub.png"
+    },
+    {
+        id: "6",
+        name: "CUBC",
+        title: translationsData[lang]["project.title.cubc"],
+        description: translationsData[lang]["project.description.cubc"],
+        date: "2019",
+        logo: "/assets/cubc.svg"
+    },
+    {
+        id: "4",
+        name: "NCR Malaysia",
+        title: translationsData[lang]["project.title.buildTool"],
+        description: translationsData[lang]["project.description.buildTool"],
+        date: "2019",
+        logo: "/assets/ncr.png"
+      },
+      {
+        id: "5",
+        name: "NCR Malaysia",
+        title: translationsData[lang]["project.title.reportTool"],
+        description: translationsData[lang]["project.description.reportTool"],
+        date: "2019",
+        logo: "/assets/ncr.png"
+      },
   ];
   
 
