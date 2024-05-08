@@ -90,7 +90,7 @@ const translationsData = {
         "project.title.interx": "银行终端广告解决方案",
         "project.description.interx": "为银行终端开发了个性化广告软件，管理员仪表板用于创建、读取、更新、删除广告内容、规则和部署。",
         "project.title.sdms": "软件分发管理系统",
-        "project.description.sdms": "为银行用户开发了管理员仪表板，用于检索终端日志、向选定的终端分发软件等。",
+        "project.description.sdms": "为银行用户开发了管理员仪表板，用于检索终端日志、向指定的终端发布新的发布包等。",
         "project.title.myesg": "ESG生态管理系统",
         "project.description.myesg": "开发了一个ESG平台，协助企业收集、管理和分析数据、评估绩效、识别风险，并提供决策支持，推动可持续发展的实现。"
     }
