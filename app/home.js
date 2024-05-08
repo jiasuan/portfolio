@@ -70,7 +70,7 @@ const translationsData = {
         "project.description.myesg": "Developed an ESG platform that empowers organizations to enhance and disclose their environmental, social, and governance practices and performance.",
     },
     'ch': {
-        "intro.title": "你好，我是陈嘉轩",
+        "intro.title": "您好，我是陈嘉轩",
         "intro.joke": "",
         "intro.subTitle" : "位与马来西亚吉隆坡的前端工程师。",
         "project.title": "我做过的项目",
